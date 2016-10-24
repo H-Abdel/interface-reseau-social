@@ -1,0 +1,33 @@
+<md-card>
+    <md-card-content>
+        <md-input placeholder="Character count (100 max)" 
+              maxlength="100" 
+              class="demo-full-width"
+              value="Quoi de neuf ?!"
+              #characterCountHintExample>
+        <md-hint align="end">{{characterCountHintExample.characterCount}} / 100</md-hint>
+    </md-input>
+    </md-card-content>
+    <md-card-actions>
+        <button md-button>LIKE</button>
+        <button md-button>SHARE</button>
+   </md-card-actions>
+</md-card>
+
+<md-card class = "post" *ngFor="let p of posts">
+    <md-card-subtitle> {{p.Date}} {{p.lieu}}</md-card-subtitle>
+    <md-card-title> {{p.auteur}} </md-card-title>   
+    <md-card-content>
+        {{ p.contenu }}
+    </md-card-content>
+    <md-card-actions>
+        <button md-icon-button>
+            <md-icon class="md-24">thumb up</md-icon>
+        </button>
+        <button md-icon-button>
+            <md-icon class="md-24">thumb down</md-icon>
+        </button>
+    </md-card-actions>
+</md-card>
+
+

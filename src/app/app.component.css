@@ -1,0 +1,21 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.post {
+  margin-top: 4px;
+  
+}
+
+.carteProfil {
+  margin: 4px;
+}
+
+.listeamisconnect {
+  margin: 4px;
+  background: white;
+}
+
+.carteami {
+  margin: 4px;
+}
